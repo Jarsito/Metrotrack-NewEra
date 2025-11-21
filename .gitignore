@@ -1,0 +1,19 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Vite
+dist/
+
+# Env
+.env
+
+# Logs
+*.log
+
+# Editor
+.vscode/
+
+# Windows garbage
+Thumbs.db
