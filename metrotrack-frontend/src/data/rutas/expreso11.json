@@ -1,0 +1,56 @@
+{
+  "id": 11,
+  "nombre": "Expreso 11",
+  "tipo": "expreso",
+  "descripcion": "Servicio expreso del Metropolitano que conecta Los Incas con Estación Central. Opera únicamente durante las horas punta de la mañana en ambos sentidos, facilitando el transporte entre la ampliación norte y el centro de Lima.",
+
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "Los Incas",
+        "destino": "Estación Central",
+        "horario": "05:00 – 10:00"
+      },
+      "sur_norte": {
+        "origen": "Estación Central",
+        "destino": "Los Incas",
+        "horario": "05:45 – 10:45"
+      }
+    },
+    "sabados": {
+      "mensaje": "El Expreso 11 no opera los sábados."
+    },
+    "domingos": {
+      "mensaje": "El Expreso 11 no opera domingos ni feriados."
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur",
+      "paraderos": [
+        "Los Incas",
+        "22 de Agosto",
+        "Universidad",
+        "Pacífico",
+        "Andrés Belaúnde",
+        "Las Vegas",
+        "Naranjal",
+        "Estación Central"
+      ]
+    },
+    {
+      "direccion": "Sur → Norte",
+      "paraderos": [
+        "Estación Central",
+        "Naranjal",
+        "Las Vegas",
+        "Andrés Belaúnde",
+        "Pacífico",
+        "Universidad",
+        "22 de Agosto",
+        "Los Incas"
+      ]
+    }
+  ]
+}

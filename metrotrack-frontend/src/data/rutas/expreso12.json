@@ -1,0 +1,36 @@
+{
+  "id": 12,
+  "nombre": "Expreso 12",
+  "tipo": "expreso",
+  "descripcion": "Servicio expreso del Metropolitano que conecta Estación Central con Benavides en sentido único Centro → Sur. Opera únicamente durante la hora punta de la mañana.",
+
+  "operacion": {
+    "lunes_viernes": {
+      "centro_sur": {
+        "origen": "Estación Central",
+        "destino": "Benavides",
+        "horario": "05:45 – 10:00"
+      }
+    },
+    "sabados": {
+      "mensaje": "El Expreso 12 no opera los sábados."
+    },
+    "domingos": {
+      "mensaje": "El Expreso 12 no opera domingos ni feriados."
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Centro → Sur",
+      "paraderos": [
+        "Estación Central",
+        "Estadio Nacional",
+        "Javier Prado",
+        "Canaval y Moreyra",
+        "Angamos",
+        "Benavides"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": 18,
+  "nombre": "Ruta B",
+  "tipo": "regular",
+  "descripcion": "Servicio regular más extenso del Metropolitano. Conecta Chimpu Ocllo con Estación Central atendiendo todas las estaciones de la troncal norte-centro. Opera todos los días.",
+
+  "operacion": {
+    "lunes_sabado": {
+      "norte_sur": {
+        "origen": "Chimpu Ocllo",
+        "destino": "Estación Central",
+        "horario": "05:00 – 23:00"
+      },
+      "sur_norte": {
+        "origen": "Estación Central",
+        "destino": "Chimpu Ocllo",
+        "horario": "05:35 – 23:00"
+      }
+    },
+    "domingos": {
+      "norte_sur": "05:00 – 22:00",
+      "sur_norte": "05:35 – 22:00"
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur",
+      "paraderos": [
+        "Chimpu Ocllo",
+        "Belaunde",
+        "Las Vegas",
+        "Los Incas",
+        "22 de Agosto",
+        "Universidad",
+        "Izaguirre",
+        "Independencia",
+        "Tomás Valle",
+        "Honorio Delgado",
+        "Pacífico",
+        "Los Jazmines",
+        "El Milagro",
+        "UNI",
+        "Parque del Trabajo",
+        "Caquetá",
+        "2 de Mayo",
+        "Quilca",
+        "España",
+        "Estación Central"
+      ]
+    }
+  ]
+}

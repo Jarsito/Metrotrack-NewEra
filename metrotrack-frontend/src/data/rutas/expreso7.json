@@ -1,0 +1,35 @@
+{
+  "id": 7,
+  "nombre": "Expreso 7",
+  "tipo": "expreso",
+  "descripcion": "Servicio rápido del Metropolitano que opera únicamente en sentido Norte → Sur, diseñado especialmente para atender la demanda del distrito de Independencia y zonas aledañas. Realiza pocas paradas para reducir significativamente los tiempos de viaje.",
+
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "Tomás Valle",
+        "destino": "Angamos",
+        "horario": "05:30 – 09:00"
+      }
+    },
+    "sabados": {
+      "mensaje": "El Expreso 7 no opera los sábados."
+    },
+    "domingos": {
+      "mensaje": "El Expreso 7 no opera domingos ni feriados."
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur",
+      "paraderos": [
+        "Tomás Valle",
+        "Estación Central",
+        "Javier Prado",
+        "Canaval y Moreyra",
+        "Angamos"
+      ]
+    }
+  ]
+}

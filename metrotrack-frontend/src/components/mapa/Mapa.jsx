@@ -1,50 +1,50 @@
-import { MapContainer, TileLayer, Marker, Polyline, Popup } from "react-leaflet";
-import L from "leaflet";
 import { useEffect, useState } from "react";
-import { obtenerEstacionesPorRuta } from "../../api/estacionRuta";
+import { MapContainer, TileLayer, Marker, Polyline, Popup } from "react-leaflet";
+import "leaflet/dist/leaflet.css";
+import { getEstacionesPorRuta } from "../../api/rutas";
 
-// Icono de estaciones
-const iconEstacion = new L.Icon({
-    iconUrl: "https://cdn-icons-png.flaticon.com/512/684/684908.png",
-    iconSize: [28, 28],
-});
+function Mapa() {
+  const [estaciones, setEstaciones] = useState([]);
 
-export default function Mapa({ rutaId }) {
-    const [estacionesRuta, setEstacionesRuta] = useState([]);
+  useEffect(() => {
+    async function cargar() {
+      try {
+        const data = await getEstacionesPorRuta(1); // Expreso 1
+        setEstaciones(data);
+      } catch (err) {
+        console.error("Error cargando estaciones:", err);
+      }
+    }
+    cargar();
+  }, []);
 
-    // Cargar estaciones cada vez que cambia la ruta seleccionada
-    useEffect(() => {
-        async function cargar() {
-            const data = await obtenerEstacionesPorRuta(rutaId);
-            setEstacionesRuta(data);
-        }
-        cargar();
-    }, [rutaId]);  // 👈 importante
+  if (estaciones.length === 0) {
+    return <p style={{ textAlign: "center" }}>Cargando Expreso 1...</p>;
+  }
 
-    const posiciones = estacionesRuta.map(e => [e.Latitud, e.Longitud]);
+  const polylinePositions = estaciones.map(e => [e.Latitud, e.Longitud]);
 
-    return (
-        <MapContainer 
-            center={[-12.0464, -77.0428]} 
-            zoom={12} 
-            style={{ height: "100vh", width: "100%" }}
-        >
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+  return (
+    <MapContainer
+      center={[-12.05, -77.03]}
+      zoom={12}
+      style={{ height: "600px", width: "100%" }}
+    >
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
 
-            {estacionesRuta.map((est) => (
-                <Marker
-                    key={est.Id}
-                    position={[est.Latitud, est.Longitud]}
-                    icon={iconEstacion}
-                >
-                    <Popup>
-                        <b>{est.Nombre}</b><br />
-                        {est.Distrito}
-                    </Popup>
-                </Marker>
-            ))}
+      {estaciones.map((e, i) => (
+        <Marker key={i} position={[e.Latitud, e.Longitud]}>
+          <Popup>
+            <strong>{e.Nombre}</strong><br />
+            Distrito: {e.Distrito}<br />
+            Orden: {e.Orden}
+          </Popup>
+        </Marker>
+      ))}
 
-            <Polyline positions={posiciones} color="blue" />
-        </MapContainer>
-    );
+      <Polyline positions={polylinePositions} color="blue" weight={4} />
+    </MapContainer>
+  );
 }
+
+export default Mapa;

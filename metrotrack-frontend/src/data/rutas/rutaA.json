@@ -1,0 +1,45 @@
+{
+  "id": 17,
+  "nombre": "Ruta A",
+  "tipo": "regular",
+  "descripcion": "Servicio regular del Metropolitano que conecta el norte con el centro de Lima. Opera todos los días, con ampliación hacia Los Incas y Plaza de Flores en 2025.",
+
+  "operacion": {
+    "lunes_domingo": {
+      "norte_centro": {
+        "origen": "Los Incas",
+        "destino": "Plaza de Flores",
+        "horario": "05:00 – 23:00"
+      },
+      "centro_norte": {
+        "origen": "Plaza de Flores",
+        "destino": "Los Incas",
+        "horario": "05:35 – 23:00"
+      }
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Centro → Sur",
+      "paraderos": [
+        "Los Incas",
+        "22 de Agosto",
+        "Universidad",
+        "Tomás Valle",
+        "Naranjal",
+        "Independencia",
+        "Izaguirre",
+        "Pacífico",
+        "UNI",
+        "Caquetá",
+        "Ramón Castilla",
+        "Tacna",
+        "Jirón de la Unión",
+        "Colmena",
+        "Estación Central",
+        "Plaza de Flores"
+      ]
+    }
+  ]
+}

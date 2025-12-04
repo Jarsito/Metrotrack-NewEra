@@ -1,0 +1,40 @@
+{
+  "id": 10,
+  "nombre": "Expreso 10",
+  "tipo": "expreso",
+  "descripcion": "Servicio rápido del Metropolitano que conecta Naranjal con Estación Central en sentido Norte → Sur. Opera únicamente por las mañanas para descongestionar el tramo norte durante la hora punta.",
+
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "Naranjal",
+        "destino": "Estación Central",
+        "horario": "06:00 – 09:00"
+      }
+    },
+    "sabados": {
+      "mensaje": "El Expreso 10 no opera los sábados."
+    },
+    "domingos": {
+      "mensaje": "El Expreso 10 no opera domingos ni feriados."
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur",
+      "paraderos": [
+        "Naranjal",
+        "Caquetá",
+        "Ramón Castilla",
+        "Tacna",
+        "Jirón de la Unión",
+        "Colmena",
+        "Dos de Mayo",
+        "Quilca",
+        "España",
+        "Estación Central"
+      ]
+    }
+  ]
+}

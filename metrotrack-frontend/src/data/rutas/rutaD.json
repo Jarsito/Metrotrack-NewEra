@@ -1,0 +1,45 @@
+{
+  "id": 20,
+  "nombre": "Ruta D",
+  "tipo": "regular",
+  "descripcion": "Servicio regular matutino que conecta Naranjal con Estación Central entre 5:00 y 11:00 a.m.",
+  "operacion": {
+    "lunes_viernes": {
+      "norte_centro": {
+        "origen": "Naranjal",
+        "destino": "Estación Central",
+        "horario": "05:00 – 10:30"
+      },
+      "centro_norte": {
+        "origen": "Estación Central",
+        "destino": "Naranjal",
+        "horario": "05:35 – 11:00"
+      }
+    },
+    "sabados": "No opera",
+    "domingos": "No opera",
+    "feriados": "No opera"
+  },
+  "sentidos": [
+    {
+      "direccion": "Norte → Centro",
+      "paraderos": [
+        "Naranjal",
+        "Izaguirre",
+        "Pacífico",
+        "Independencia",
+        "Los Jazmines",
+        "Tomás Valle",
+        "El Milagro",
+        "Honorio Delgado",
+        "UNI",
+        "Parque del Trabajo",
+        "Caquetá",
+        "Dos de Mayo",
+        "Quilca",
+        "España",
+        "Estación Central"
+      ]
+    }
+  ]
+}

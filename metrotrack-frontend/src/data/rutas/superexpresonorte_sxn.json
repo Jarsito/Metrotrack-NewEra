@@ -1,0 +1,51 @@
+{
+  "id": 16,
+  "nombre": "Súper Expreso Norte (SXN)",
+  "tipo": "super_expresso",
+  "descripcion": "Servicio rápido del Metropolitano que conecta el tramo norte con Estación Central. Opera en mañana y tarde solo en días laborales, con una ruta principal y una ruta secundaria exclusiva para la mañana.",
+
+  "operacion": {
+    "lunes_viernes": {
+      "ruta_principal_norte_sur": {
+        "origen": "Naranjal",
+        "destino": "Estación Central",
+        "horario_manana": "05:00 – 09:00",
+        "horario_tarde": "16:30 – 20:30"
+      },
+      "ruta_secundaria_norte_sur": {
+        "origen": "22 de Agosto",
+        "destino": "Estación Central",
+        "horario_manana": "06:00 – 08:00",
+        "horario_tarde": "NO OPERA"
+      }
+    },
+    "sabados": null,
+    "domingos": null
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Ruta principal – Norte → Sur",
+      "paraderos": [
+        "Naranjal",
+        "2 de Mayo",
+        "Quilca",
+        "España",
+        "Estación Central"
+      ]
+    },
+    {
+      "direccion": "Ruta secundaria – Norte → Sur",
+      "paraderos": [
+        "22 de Agosto",
+        "Las Vegas",
+        "Universidad",
+        "Naranjal",
+        "2 de Mayo",
+        "Quilca",
+        "España",
+        "Estación Central"
+      ]
+    }
+  ]
+}

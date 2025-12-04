@@ -1,0 +1,37 @@
+{
+  "id": 3,
+  "nombre": "Expreso 3",
+  "tipo": "expreso",
+  "descripcion": "Servicio rápido del Metropolitano que opera únicamente en sentido Sur → Norte. Conecta Benavides, Angamos y Naranjal sin paradas intermedias adicionales.",
+  
+  "operacion": {
+    "lunes_viernes": {
+      "sur_norte": {
+        "origen": "Benavides",
+        "destino": "Naranjal",
+        "horario": "17:00 – 21:00"
+      }
+    },
+    "sabados": {
+      "sur_norte": {
+        "origen": "Benavides",
+        "destino": "Naranjal",
+        "horario": "12:30 – 15:30"
+      }
+    },
+    "domingos": {
+      "mensaje": "El Expreso 3 no opera domingos ni feriados."
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Sur → Norte",
+      "paraderos": [
+        "Benavides",
+        "Angamos",
+        "Naranjal"
+      ]
+    }
+  ]
+}

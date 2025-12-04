@@ -1,0 +1,51 @@
+{
+  "id": 15,
+  "nombre": "Súper Expreso SX",
+  "tipo": "super_expresso",
+  "descripcion": "Servicio rápido del Metropolitano con rutas diferenciadas para la mañana y la tarde, conectando Naranjal con zonas laborales de San Isidro.",
+  
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "Naranjal",
+        "destino": "28 de Julio",
+        "horario": "05:30 – 09:00"
+      },
+      "sur_norte": {
+        "origen": "Aramburú",
+        "destino": "Naranjal",
+        "horario": "17:00 – 21:00"
+      }
+    },
+    "sabados": {
+      "norte_sur": {
+        "origen": "Naranjal",
+        "destino": "28 de Julio",
+        "horario": "06:00 – 09:00"
+      },
+      "sur_norte": "NO OPERA"
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur (Mañana)",
+      "paraderos": [
+        "Naranjal",
+        "Tomás Valle",
+        "UNI",
+        "Canaval y Moreyra",
+        "Aramburú / Comunidad Andina",
+        "28 de Julio"
+      ]
+    },
+    {
+      "direccion": "Sur → Norte (Tarde)",
+      "paraderos": [
+        "Aramburú / Comunidad Andina",
+        "Canaval y Moreyra",
+        "Naranjal"
+      ]
+    }
+  ]
+}

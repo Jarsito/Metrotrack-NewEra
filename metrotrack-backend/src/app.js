@@ -23,6 +23,7 @@ app.use("/api/tarifas", tarifaRoutes);
 app.use("/api/estacion-ruta", estacionRutaRoutes);
 
 
+
 app.get("/", (req, res) => {
   res.send("API MetroTrack backend funcionando ✅");
 });

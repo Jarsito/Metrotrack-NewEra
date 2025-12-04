@@ -1,0 +1,43 @@
+{
+  "id": 13,
+  "nombre": "Expreso 13",
+  "tipo": "expreso",
+  "descripcion": "Servicio rápido del Metropolitano que opera en ambos sentidos durante la mañana. Conecta Chimpu Ocllo, Belaunde, UNI y Estación Central, pero sus dos rutas tienen recorridos distintos según el sentido.",
+  
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "Chimpu Ocllo",
+        "destino": "Estación Central",
+        "horario": "05:00 – 10:00"
+      },
+      "sur_norte": {
+        "origen": "Estación Central",
+        "destino": "Los Incas",
+        "horario": "05:50 – 10:00"
+      }
+    },
+    "sabados": null,
+    "domingos": null
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur",
+      "paraderos": [
+        "Chimpu Ocllo",
+        "Andrés Belaunde",
+        "UNI",
+        "Estación Central"
+      ]
+    },
+    {
+      "direccion": "Sur → Norte",
+      "paraderos": [
+        "Estación Central",
+        "UNI",
+        "Los Incas"
+      ]
+    }
+  ]
+}

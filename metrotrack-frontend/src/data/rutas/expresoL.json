@@ -1,0 +1,31 @@
+{
+  "id": 14,
+  "nombre": "Expreso L (Lechucero)",
+  "tipo": "expreso_nocturno",
+  "descripcion": "Servicio nocturno del Metropolitano que opera jueves, viernes y sábado por la noche, conectando Matellini con Naranjal con paraderos clave.",
+  "operacion": {
+    "jueves_viernes_sabado": {
+      "nocturno": {
+        "origen": "Matellini",
+        "destino": "Naranjal",
+        "horario": "23:30 – 04:00",
+        "frecuencia": "Cada 30 minutos"
+      }
+    }
+  },
+  "sentidos": [
+    {
+      "direccion": "Sur → Norte",
+      "paraderos": [
+        "Matellini",
+        "Bulevar",
+        "Ricardo Palma",
+        "Canadá",
+        "Jirón de la Unión",
+        "UNI",
+        "Tomás Valle",
+        "Naranjal"
+      ]
+    }
+  ]
+}

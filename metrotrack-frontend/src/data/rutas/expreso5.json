@@ -1,0 +1,76 @@
+{
+  "id": 5,
+  "nombre": "Expreso 5",
+  "tipo": "expreso",
+  "descripcion": "Servicio rápido que conecta Matellini con Naranjal atravesando tramos del Sur, Centro y Norte. Opera en horarios amplios entre semana y sábados.",
+
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "Naranjal",
+        "destino": "Plaza de Flores",
+        "horario": "09:00 – 17:00"
+      },
+      "sur_norte": {
+        "origen": "Plaza de Flores",
+        "destino": "Naranjal",
+        "horario": "09:00 – 17:00"
+      }
+    },
+    "sabados": {
+      "norte_sur": {
+        "origen": "Naranjal",
+        "destino": "Plaza de Flores",
+        "horario": "05:15 – 20:20"
+      },
+      "sur_norte": {
+        "origen": "Plaza de Flores",
+        "destino": "Naranjal",
+        "horario": "05:15 – 20:20"
+      }
+    },
+    "domingos": {
+      "mensaje": "El Expreso 5 no opera domingos ni feriados."
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Sur → Norte",
+      "paraderos": [
+        "Matellini",
+        "Terán",
+        "Escuela Militar",
+        "Estadio Unión",
+        "Balta",
+        "Bulevar",
+        "28 de Julio",
+        "Ricardo Palma",
+        "Angamos",
+        "Domingo Orué",
+        "Canaval y Moreyra",
+        "Javier Prado",
+        "Parque del Trabajo",
+        "Aramburú / Comunidad Andina",
+        "México",
+        "Estación Central",
+        "España",
+        "Quilca",
+        "Ramón Castilla",
+        "Tacna",
+        "Jirón de la Unión",
+        "Colmena",
+        "Dos de Mayo",
+        "UNI",
+        "Honorio Delgado",
+        "El Milagro",
+        "Tomás Valle",
+        "Los Jazmines",
+        "Independencia",
+        "Pacífico",
+        "Izaguirre",
+        "Naranjal"
+      ]
+    }
+  ]
+}

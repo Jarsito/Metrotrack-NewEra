@@ -1,7 +1,7 @@
 const {
   crearRuta,
   obtenerRutas,
-  obtenerRutaPorId,
+  obtenerEstacionesPorRutaId,
 } = require("../models/rutaModel");
 
 // POST: Crear ruta
@@ -35,7 +35,7 @@ async function listar(req, res) {
   }
 }
 
-// GET: ruta por id
+// GET: obtener ruta por id
 async function obtener(req, res) {
   try {
     const id = parseInt(req.params.id);
@@ -51,8 +51,34 @@ async function obtener(req, res) {
     }
 
     res.json({ ok: true, data: ruta });
+
   } catch (error) {
     console.error("Error obtener ruta:", error);
+    res.status(500).json({ ok: false, error: error.message });
+  }
+}
+
+
+
+
+
+// GET: ruta por id
+async function obtenerEstacionesPorRuta(req, res) {
+  try {
+    const id = parseInt(req.params.id);
+
+    if (isNaN(id)) {
+      return res.status(400).json({ ok: false, message: "ID inválido" });
+    }
+
+    const estaciones = await obtenerEstacionesPorRutaId(id);
+
+    res.json({
+      ok: true,
+      data: estaciones
+    });
+  } catch (error) {
+    console.error("Error obtener estaciones de ruta:", error);
     res.status(500).json({ ok: false, error: error.message });
   }
 }
@@ -61,4 +87,5 @@ module.exports = {
   crear,
   listar,
   obtener,
+  obtenerEstacionesPorRuta
 };

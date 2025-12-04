@@ -1,0 +1,101 @@
+{
+  "id": 2,
+  "nombre": "Expreso 2",
+  "tipo": "expreso",
+  "descripcion": "Servicio rápido del Metropolitano que conecta Naranjal con 28 de Julio en horas punta. Opera con frecuencias especiales y realiza paradas estratégicas en el centro y norte de Lima.",
+  
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "Terminal Naranjal",
+        "destino": "Estación 28 de Julio",
+        "horario": "05:00 – 09:00"
+      },
+      "sur_norte": {
+        "origen": "Estación Ricardo Palma",
+        "destino": "Terminal Naranjal",
+        "horario": "17:00 – 21:00"
+      }
+    },
+    "sabados": {
+      "norte_sur": {
+        "origen": "Terminal Matellini",
+        "destino": "Estación Central",
+        "horario": "06:00 – 09:00"
+      },
+      "sur_norte": {
+        "origen": "Estación Ricardo Palma",
+        "destino": "Terminal Naranjal",
+        "horario": "12:30 – 15:30"
+      }
+    },
+    "domingos": {
+      "norte_sur": {
+        "origen": "Terminal Matellini",
+        "destino": "Estación Central",
+        "horario": "06:30 – 21:00"
+      },
+      "sur_norte": {
+        "origen": "Terminal Matellini",
+        "destino": "Estación Central",
+        "horario": "06:00 – 21:00"
+      }
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur",
+      "paraderos": [
+        "Naranjal",
+        "Izaguirre",
+        "Pacífico",
+        "Independencia",
+        "Los Jazmines",
+        "Tomás Valle",
+        "El Milagro",
+        "Honorio Delgado",
+        "UNI",
+        "Dos de Mayo",
+        "Jirón de la Unión",
+        "Tacna",
+        "Ramón Castilla",
+        "Manuel González Prada",
+        "Quilca",
+        "España",
+        "Estación Central",
+        "28 de Julio"
+      ]
+    },
+    {
+      "direccion": "Sur → Norte",
+      "paraderos": [
+        "Ricardo Palma",
+        "Angamos",
+        "Domingo Orué",
+        "Canaval y Moreyra",
+        "Javier Prado",
+        "Aramburú",
+        "México",
+        "Estación Central",
+        "España",
+        "Quilca",
+        "Manuel González Prada",
+        "Ramón Castilla",
+        "Tacna",
+        "Jirón de la Unión",
+        "Colmena",
+        "Dos de Mayo",
+        "UNI",
+        "Honorio Delgado",
+        "El Milagro",
+        "Tomás Valle",
+        "Los Jazmines",
+        "Independencia",
+        "Pacífico",
+        "Izaguirre",
+        "Naranjal"
+      ]
+    }
+  ]
+}

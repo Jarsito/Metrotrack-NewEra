@@ -1,0 +1,45 @@
+{
+  "id": 19,
+  "nombre": "Ruta C",
+  "tipo": "regular",
+  "descripcion": "Ruta regular del Metropolitano que conecta el Centro de Lima con Chorrillos. Atiende zonas financieras, residenciales y comerciales, operando todos los días.",
+
+  "operacion": {
+    "lunes_sabado": {
+      "norte_sur": {
+        "origen": "Ramón Castilla",
+        "destino": "Estación Matellini",
+        "horario": "05:00 – 23:00"
+      },
+      "sur_norte": {
+        "origen": "Estación Central",
+        "destino": "Terminal Naranjal",
+        "horario": "05:35 – 23:00"
+      }
+    },
+    "domingo": {
+      "norte_sur": "05:00 – 22:00",
+      "sur_norte": "05:35 – 22:00"
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur",
+      "paraderos": [
+        "Ramón Castilla",
+        "Jirón de la Unión",
+        "Estación Central",
+        "México",
+        "Javier Prado",
+        "Aramburú",
+        "Angamos",
+        "Benavides",
+        "Plaza de Flores",
+        "Bulevar",
+        "Escuela Militar",
+        "Rosario de Villa"
+      ]
+    }
+  ]
+}

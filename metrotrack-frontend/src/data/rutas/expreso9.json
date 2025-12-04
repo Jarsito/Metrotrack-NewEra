@@ -1,0 +1,57 @@
+{
+  "id": 9,
+  "nombre": "Expreso 9",
+  "tipo": "expreso",
+  "descripcion": "Servicio expreso del Metropolitano que conecta la estación UNI con el tramo Sur, pasando por el Centro de Lima. Es utilizado principalmente por estudiantes y usuarios que requieren un viaje directo entre el norte y Barranco.",
+
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "UNI",
+        "destino": "Benavides",
+        "horario": "05:30 – 09:00"
+      },
+      "sur_norte": {
+        "origen": "Plaza de Flores",
+        "destino": "UNI",
+        "horario": "05:30 – 09:00"
+      }
+    },
+    "sabados": {
+      "mensaje": "El Expreso 9 no opera los sábados."
+    },
+    "domingos": {
+      "mensaje": "El Expreso 9 no opera domingos ni feriados."
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur",
+      "paraderos": [
+        "UNI",
+        "Caquetá",
+        "España",
+        "Estación Central",
+        "Javier Prado",
+        "Canaval y Moreyra",
+        "Angamos",
+        "Benavides"
+      ]
+    },
+    {
+      "direccion": "Sur → Norte",
+      "paraderos": [
+        "Plaza de Flores",
+        "Benavides",
+        "Angamos",
+        "Canaval y Moreyra",
+        "Javier Prado",
+        "Estación Central",
+        "España",
+        "Caquetá",
+        "UNI"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": 1,
+  "nombre": "Expreso 1",
+  "tipo": "expreso",
+  "descripcion": "Servicio rápido del Metropolitano que reduce tiempos de viaje realizando menos paradas. Opera en días hábiles y conecta estaciones clave entre el Sur, Centro y Norte.",
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "Estación Central",
+        "destino": "Terminal Matellini",
+        "horario": "05:30 – 20:00"
+      },
+      "sur_norte": {
+        "origen": "Terminal Matellini",
+        "destino": "Estación Central",
+        "horario": "05:00 – 21:00"
+      }
+    },
+    "sabados": {
+      "norte_sur": {
+        "origen": "Terminal Matellini",
+        "destino": "Estación Central",
+        "horario": "06:30 – 21:00"
+      },
+      "sur_norte": {
+        "origen": "Terminal Matellini",
+        "destino": "Estación Central",
+        "horario": "06:00 – 21:00"
+      }
+    },
+    "domingos": {
+      "norte_sur": {
+        "origen": "Terminal Matellini",
+        "destino": "Estación Central",
+        "horario": "06:30 – 21:00"
+      },
+      "sur_norte": {
+        "origen": "Terminal Matellini",
+        "destino": "Estación Central",
+        "horario": "06:00 – 21:00"
+      }
+    }
+  },
+  "sentidos": [
+    {
+      "direccion": "Sur → Norte",
+      "paraderos": [
+        "Matellini",
+        "Terán",
+        "Escuela Militar",
+        "Estadio Unión",
+        "Balta",
+        "Bulevar",
+        "28 de Julio",
+        "Ricardo Palma",
+        "Angamos",
+        "Domingo Orué",
+        "Canaval y Moreyra",
+        "Javier Prado",
+        "Parque del Trabajo",
+        "Aramburú / Comunidad Andina",
+        "México",
+        "Estación Central",
+        "España",
+        "Quilca",
+        "Manuel González Prada",
+        "Ramón Castilla",
+        "Tacna",
+        "Jirón de la Unión",
+        "Colmena",
+        "Dos de Mayo",
+        "UNI",
+        "Honorio Delgado",
+        "El Milagro",
+        "Tomás Valle",
+        "Los Jazmines",
+        "Independencia",
+        "Pacífico",
+        "Izaguirre",
+        "Naranjal"
+      ]
+    }
+  ]
+}

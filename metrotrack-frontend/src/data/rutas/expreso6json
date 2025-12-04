@@ -1,0 +1,37 @@
+{
+  "id": 6,
+  "nombre": "Expreso 6",
+  "tipo": "expreso",
+  "descripcion": "Servicio rápido que conecta Izaguirre con Benavides en sentido único (Norte → Sur). Operación exclusiva en días hábiles por la mañana.",
+  
+  "operacion": {
+    "lunes_viernes": {
+      "norte_sur": {
+        "origen": "Izaguirre",
+        "destino": "Benavides",
+        "horario": "05:30 – 10:00"
+      }
+    },
+    "sabados": {
+      "mensaje": "El Expreso 6 no opera sábados."
+    },
+    "domingos": {
+      "mensaje": "El Expreso 6 no opera domingos ni feriados."
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Norte → Sur",
+      "paraderos": [
+        "Izaguirre",
+        "Independencia",
+        "Estación Central",
+        "Javier Prado",
+        "Canaval y Moreyra",
+        "Angamos",
+        "Benavides"
+      ]
+    }
+  ]
+}

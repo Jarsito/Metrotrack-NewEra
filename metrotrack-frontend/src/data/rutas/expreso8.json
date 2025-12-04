@@ -1,0 +1,40 @@
+{
+  "id": 8,
+  "nombre": "Expreso 8",
+  "tipo": "expreso",
+  "descripcion": "Servicio expreso del Metropolitano que conecta Plaza de Flores (Barranco) con Izaguirre (Independencia) en sentido Sur → Norte. Opera únicamente en días hábiles y en horario vespertino, favoreciendo el retorno hacia el norte.",
+
+  "operacion": {
+    "lunes_viernes": {
+      "sur_norte": {
+        "origen": "Plaza de Flores",
+        "destino": "Izaguirre",
+        "horario": "17:00 – 21:00"
+      }
+    },
+    "sabados": {
+      "mensaje": "El Expreso 8 no opera los sábados."
+    },
+    "domingos": {
+      "mensaje": "El Expreso 8 no opera domingos ni feriados."
+    }
+  },
+
+  "sentidos": [
+    {
+      "direccion": "Sur → Norte",
+      "paraderos": [
+        "Plaza de Flores",
+        "Benavides",
+        "Angamos",
+        "Canaval y Moreyra",
+        "Javier Prado",
+        "Estación Central",
+        "UNI",
+        "Tomás Valle",
+        "Independencia",
+        "Izaguirre"
+      ]
+    }
+  ]
+}
